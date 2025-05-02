@@ -17,43 +17,59 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p> Bem vindo de volta! </p>
+
                 <form action="login.php" method="post" autocomplete="on">
+
                     <div class="campo">
                         <span class="material-symbols-outlined"> person </span>
                         <input 
-                        type="email" 
-                        name="login" 
-                        id="ilogin" 
-                        placeholder="Email" 
-                        autocomplete="email" 
-                        required maxlength="40">
-                        <label for="ilogin">Login</label>
+                            type="email" 
+                            name="login" 
+                            id="ilogin" 
+                            placeholder="Email" 
+                            autocomplete="email" 
+                            required maxlength="40">
                     </div>
+
                     <div class="campo">
-                        <span class="material-symbols-outlined"> key </span>
+                        <span class="material-symbols-outlined">key</span>
                         <input 
-                        type="password" 
-                        name="senha" 
-                        id="isenha" 
-                        placeholder="Senha" 
-                        autocomplete="current-password" 
-                        required minlength="10" 
-                        maxlength="20">
-                        <label for="isenha">Senha</label>
+                            type="password" 
+                            name="senha" 
+                            id="isenha" 
+                            placeholder="Senha" 
+                            autocomplete="current-password" 
+                            required minlength="8" 
+                            maxlength="20">
+                        <span id="toggleSenha" class="material-symbols-outlined toggle-senha">
+                            visibility_off
+                        </span>
                     </div>
+
                     <input type="submit" value="Login">
 
-                    <a href="esqueci.html" class="botao">
-                        Esqueceu a senha?
-                    </a>
-
-                    <a href="cadastro.html" class="cadastro">
-                        Cadastre-se
-                    </a>
- 
+                    <a href="recupere.html" class="botao"> Esqueceu a senha? </a>
+                    <a href="cadastro.html" class="cadastro"> Cadastre-se </a>
                 </form>
             </div>
         </section>
     </main>
+
+    <script>
+        const toggle = document.getElementById('toggleSenha');
+        const senha = document.getElementById('isenha');
+    
+        toggle.addEventListener('click', () => {
+            const tipo = senha.getAttribute('type');
+            if (tipo === 'password') {
+                senha.setAttribute('type', 'text');
+                toggle.textContent = 'visibility'; // olho aberto
+            } else {
+                senha.setAttribute('type', 'password');
+                toggle.textContent = 'visibility_off'; // olho cortado
+            }
+        });
+    </script>
+    
 </body>
 </html>

@@ -1,0 +1,61 @@
+@charset "UTF-8"; /* CADASTRO */
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*CONFIGURAÇÃO PARA TABLET */
+    body {
+        background: linear-gradient(135deg, #1a3d5a, #303b77, #51556b, #c2bfbf);
+    }
+
+    section#cadastro {
+        width: 60vw;
+        height: 400px;
+    }
+
+    form > input[type="submit"] {
+        margin-top: 15px;
+    }
+
+    section#rcadastro > div#formulario {
+        padding: 7%;
+        float: right;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 992px) { /* CONFIGURAÇÕES PARA DESKTOP */
+    body {
+        background: linear-gradient(135deg, #1a3d5a, #303b77, #51556b, #c2bfbf);
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0px;
+    }
+
+    section#cadastro {
+        width: 500px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    form > input[type="submit"] {
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    section#cadastro > div#formulario {
+        padding: 5%;
+        float: none;
+        width: 100%;
+    }
+
+    div#formulario > h1 {
+        font-size:  2em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="cadastro/style.css">
+    <link rel="stylesheet" href="cadastro/media-query.css">
+</head>
+<body>
+    <main>
+        <section id="cadastro">
+            <div id="formulario">
+                <h1>Faça seu cadastro</h1>
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <input type="text"
+                        name="nome"
+                        id="nome"
+                        placeholder="Nome"
+                        autocomplete="additional-name">
+                    </div>
+                    <div class="campo">
+                        <input 
+                        type="email" 
+                        name="cadastro" 
+                        id="icadastro" 
+                        placeholder="Email" 
+                        autocomplete="email" 
+                        required maxlength="40">
+                        <label for="icadastro">Cadastrar</label>
+                    </div>
+                    <div class="campo">
+                        <input 
+                        type="password" 
+                        name="senha" 
+                        id="isenha" 
+                        placeholder="Senha" 
+                        autocomplete="current-password" 
+                        required minlength="8" 
+                        maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <div class="campo">
+                        <input 
+                        type="password" 
+                        name="senha" 
+                        id="isenha" 
+                        placeholder="Confirme sua senha" 
+                        autocomplete="current-password" 
+                        required minlength="8" 
+                        maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+
+                    <a href="cadastro.html" class="cadastro">
+                        Cadastre-se
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

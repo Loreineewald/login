@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar senha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="esqueci/style.css">
+    <link rel="stylesheet" href="esqueci/media-query.css">
+</head>
+<body>
+    <main>
+        <section id="recupere">
+            <div id="imagem">
+                <!-- Imagem nas CSS -->
+            </div>
+            <div id="formulario">
+                <h1>Recupere sua senha</h1>
+                <p> Insira seu Email </p>
+                <form action="esqueci.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined"> mail </span>
+                        <input 
+                        type="email" 
+                        name="recupere" 
+                        id="irecupere" 
+                        placeholder="Email" 
+                        autocomplete="email" 
+                        required maxlength="40">
+                        <label for="irecupere">Enviar</label>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

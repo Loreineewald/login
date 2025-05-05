@@ -95,7 +95,7 @@ div.campo > input:focus-within {
     background-color: white;
 }
 
-form > a.cadastro { /*cadastro*/
+form > input {
     display: block;
     text-align: center;
     font-size: 1em;
@@ -110,8 +110,13 @@ form > a.cadastro { /*cadastro*/
     text-decoration: none;
 }
 
-form > a.cadastro:hover {
+form > input[type="submit"] {
     background-color: var(--cor0);
     color: white;
+    cursor: pointer;
 }
 
+#erro-senha {
+    font-size: 0.8em;
+    display: block;
+}

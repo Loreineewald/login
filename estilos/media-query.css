@@ -1,15 +1,11 @@
 @charset "UTF-8"; /* LOGIN */
 
-@media screen and (min-width: 700px) and (max-width: 992px) { /*CONFIGURAÇÃO PARA TABLET */
-    body {
-        background: linear-gradient(135deg, #1a3d5a, #303b77, #51556b, #c2bfbf);
-    }
-
+/* CONFIGURAÇÃO PARA TABLET */
+@media screen and (min-width: 700px) and (max-width: 992px) {
     section#login {
         width: 80vw;
         min-height: 350px;
         display: flex;
-        overflow: hidden;
         }
 
     section#login > div#imagem {
@@ -26,32 +22,28 @@
         justify-content: center;
     }
 
-    form > input[type=submit] {
-        height: 40px;
-    }
-
+    form > input[type=submit] , 
     form > a.cadastro {
         height: 40px;
         padding: 7px;
     }
 }
 
-@media screen and (min-width: 992px) { /* CONFIGURAÇÕES PARA DESKTOP */
+/* CONFIGURAÇÕES PARA DESKTOP */
+@media screen and (min-width: 992px) { 
     body {
-        background: linear-gradient(135deg, #1a3d5a, #303b77, #51556b, #c2bfbf);
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
         margin: 0;
     }
-    
+
     section#login {
         width: 950px;
         height: 400px;
         display: flex;
-        flex-flow: row nowrap;
-        }
+    }
 
     section#login > div#imagem {
         flex: 1;
@@ -77,13 +69,9 @@
         margin: 20px 0px;
     }
 
-    form > input[type=submit] {
-        height: 40px;
-    }
-
+    form > input[type=submit] ,
     form > a.cadastro {
         height: 40px;
         padding: 7px;
     }
-
 }

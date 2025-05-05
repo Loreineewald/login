@@ -12,53 +12,68 @@
         <section id="cadastro">
             <div id="formulario">
                 <h1>Faça seu cadastro</h1>
-                <form action="cadastro.php" method="post" autocomplete="on">
+                <form action="cadastro.php" method="post" onsubmit="return validarSenhas()">
                     <div class="campo">
-                        <input type="text"
+                        <input 
+                        type="text"
                         name="nome"
                         id="nome"
                         placeholder="Nome"
                         autocomplete="additional-name">
                     </div>
+
                     <div class="campo">
                         <input 
                         type="email" 
                         name="cadastro" 
-                        id="icadastro" 
                         placeholder="Email" 
                         autocomplete="email" 
                         required maxlength="40">
-                        <label for="icadastro">Cadastrar</label>
-                    </div>
-                    <div class="campo">
-                        <input 
-                        type="password" 
-                        name="senha" 
-                        id="isenha" 
-                        placeholder="Senha" 
-                        autocomplete="current-password" 
-                        required minlength="8" 
-                        maxlength="20">
-                        <label for="isenha">Senha</label>
-                    </div>
-                    <div class="campo">
-                        <input 
-                        type="password" 
-                        name="senha" 
-                        id="isenha" 
-                        placeholder="Confirme sua senha" 
-                        autocomplete="current-password" 
-                        required minlength="8" 
-                        maxlength="20">
-                        <label for="isenha">Senha</label>
                     </div>
 
-                    <a href="cadastro.html" class="cadastro">
-                        Cadastre-se
-                    </a>
+                    <div class="campo">
+                        <input 
+                        type="password" 
+                        name="senha" 
+                        id="senha" 
+                        placeholder="Senha" 
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                        title="A senha deve conter pelo menos 8 caracteres, incluindo letras e números."
+                        autocomplete="new-password" 
+                        maxlength="20">
+                    </div>
+
+                    <div class="campo">
+                        <input 
+                        type="password" 
+                        name="confirma_senha" 
+                        id="confirma_senha" 
+                        placeholder="Confirme sua senha" 
+                        autocomplete="new-password"  
+                        maxlength="20">
+                        <span id="erro-senha" style="color: red;"></span>
+                    </div>
+
+                    <input type="submit" value="Cadastrar">
                 </form>
             </div>
         </section>
     </main>
+
+    <script>
+        function validarSenhas() {
+            const senha = document.getElementById("senha").value;
+            const confirma = document.getElementById("confirma_senha").value;
+            const erroSpan = document.getElementById("erro-senha");
+
+            if (senha !== confirma) {
+                erroSpan.textContent = "As senhas não coincidem.";
+                return false;
+            }
+
+            erroSpan.textContent = "";
+            return true;
+        }
+    </script>
 </body>
 </html>

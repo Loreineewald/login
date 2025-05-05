@@ -48,7 +48,6 @@ section#recupere {
 }
 
 section#recupere > div#imagem {
-    display: block;
     background: #2c4a82 url(../imagens/pexels-jovydas-3366171.jpg) no-repeat;
     border-radius: 20px;
     background-position: left bottom;
@@ -57,7 +56,6 @@ section#recupere > div#imagem {
 }
 
 section#recupere > div#formulario {
-    display: block;
     padding: 20px;
 }
 
@@ -74,9 +72,10 @@ div#formulario > p {
 form > div.campo {
     background-color: white;
     border: 2px solid var(--cor2);
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     width: 100%;
-    height: 100%;
     border-radius: 50px;
     margin: 8px 0px;
     padding: 0px;
@@ -101,17 +100,11 @@ div.campo > input {
     padding: 0 15px;
     border: none;
     border-radius: 20px;
-    transform: translateY(-10px);
     outline: none;
     transition: all 0.3s ease;
 }
 
-div.campo > input:focus-within {
-    background-color: white;
-}
-
 form > input[type=submit] {
-    display: block;
     font-size: 1em;
     width: 100%;
     height: 30px;
@@ -132,8 +125,6 @@ form > a.botao { /*esqueci a senha*/
     text-align: right;
     font-size: 0.9em;
     color: rgb(179, 2, 2);
-    height: 0px;
     padding-top: 5px;
-    margin: 0px;
     text-decoration: none;
 }

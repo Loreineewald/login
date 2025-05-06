@@ -49,6 +49,7 @@
         padding: 0px;
         height: 40px;
         border: none;
+        border: 1px solid var(--cor0);
     }
 
     section#cadastro > div#formulario {

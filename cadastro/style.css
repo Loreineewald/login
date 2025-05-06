@@ -38,8 +38,8 @@ section#cadastro {
 
     background-color: white;
     padding: 4px;
-    width: 250px;
-    height: 400px;
+    width: 280px;
+    height: 460px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.575);
 
@@ -50,11 +50,12 @@ section#cadastro {
 section#cadastro > div#formulario {
     display: block;
     padding: 15px;
+    margin: 20px 0px;
 }
 
 div#formulario > h1 {
     text-align: center;
-    margin-bottom: 10px;
+    margin: 0px 0px 30px 0px;
 }
 
 form > div.campo {
@@ -62,14 +63,14 @@ form > div.campo {
     border: 2px solid var(--cor2);
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 8px;
 
     width: 100%;
     height: 100%;
     border-radius: 50px;
     margin-top: 5px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
 }
 
@@ -82,17 +83,11 @@ div.campo > input {
     font-size: .9em;
     width: 100%;
     height: 25px;
-    margin-top: 15px;
     padding: 5px;
     border: none;
     border-radius: 20px;
-    transform: translateY(-10px);
     outline: none;
     transition: all 0.3s ease;
-}
-
-div.campo > input:focus-within {
-    background-color: white;
 }
 
 form > input {
@@ -100,7 +95,7 @@ form > input {
     text-align: center;
     font-size: 1em;
     width: 100%;
-    height: 30px;
+    height: 35px;
     padding: 4px;
     margin: 45px 0px;
     background-color: white;

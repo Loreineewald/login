@@ -3,9 +3,9 @@
 /* CONFIGURAÇÃO PARA TABLET */
 @media screen and (min-width: 700px) and (max-width: 992px) {
     section#login {
+        display: flex;
         width: 80vw;
         min-height: 350px;
-        display: flex;
         }
 
     section#login > div#imagem {
@@ -22,11 +22,10 @@
         justify-content: center;
     }
 
-    form > input[type=submit] , 
     form > a.cadastro {
-        height: 40px;
-        padding: 7px;
+        margin-top: 50px;
     }
+
 }
 
 /* CONFIGURAÇÕES PARA DESKTOP */

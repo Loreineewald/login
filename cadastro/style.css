@@ -30,6 +30,11 @@ main {
     width: 100vw;
 }
 
+div#formulario > h1 {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
 section#cadastro {
     position: absolute;
     top: 50%;
@@ -38,8 +43,8 @@ section#cadastro {
 
     background-color: white;
     padding: 4px;
-    width: 280px;
-    height: 460px;
+    width: 320px;
+    height: 430px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.575);
 
@@ -51,11 +56,6 @@ section#cadastro > div#formulario {
     display: block;
     padding: 15px;
     margin: 20px 0px;
-}
-
-div#formulario > h1 {
-    text-align: center;
-    margin: 0px 0px 30px 0px;
 }
 
 form > div.campo {
@@ -72,10 +72,6 @@ form > div.campo {
     margin-top: 5px;
     padding: 10px 10px;
     box-sizing: border-box;
-}
-
-div.campo > label {
-    display: none;
 }
 
 div.campo > input {
@@ -96,8 +92,8 @@ form > input {
     font-size: 1em;
     width: 100%;
     height: 35px;
-    padding: 4px;
-    margin: 45px 0px;
+    padding: 7px;
+    margin-top: 45px;
     background-color: white;
     color: #2c5f5d;
     border: 1px solid var(--cor0);
@@ -106,9 +102,14 @@ form > input {
 }
 
 form > input[type="submit"] {
+    background-color: white;
+    color: var(--cor0);
+    cursor: pointer;
+}
+
+form > input[type="submit"]:hover {
     background-color: var(--cor0);
     color: white;
-    cursor: pointer;
 }
 
 #erro-senha {

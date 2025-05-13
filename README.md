@@ -42,3 +42,12 @@ Projetado para se adaptar a diferentes tamanhos de tela:
 - Estrutura modular e semântica.
 - Layout elegante com **cores suaves**, **bordas arredondadas** e **feedback visual**.
 - Totalmente **mobile-first**.
+
+---
+
+## 🌐 Acesse o projeto online
+
+🔗 [Clique aqui para visualizar](https://loreineewald.github.io/login/) <br>
+📦 [Ver repositório no GitHub](https://github.com/Loreineewald/login)
+
+---
